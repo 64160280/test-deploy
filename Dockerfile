@@ -5,7 +5,7 @@ FROM nginx:alpine
 # RUN rm /etc/nginx/conf.d/default.conf
 
 # Copy your project files into the container
-COPY ./index.html /usr/share/nginx/html
+COPY ./public/index.html /usr/share/nginx/html
 
 # Expose port 80 for Nginx
 EXPOSE 8080
